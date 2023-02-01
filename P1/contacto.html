@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html">Madrid Mad Tour</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="bocetos.html">Bocetos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="detalles.html">Detalles</a></li>
+                    <li><a href="miembros.html">Miembros</a></li>
+                    <li><a href="planificacion.html">Planificación</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <h1> Contacto </h1>
+
+    <form action='contacto.php' method='POST'>
+        <fieldset>
+            <legend>Contacto</legend>
+            <br>
+            Nombre: <br> <input type='text' name='nom'> <br> <br>
+            Email de contacto: <br> <input type='email' name='pass'> <br> <br>
+            Motivo de consulta: <br>
+            <input type="radio" name="consulta" value="E">Evaluación <br>
+            <input type="radio" name="consulta" value="S">Sugerencias <br>
+            <input type="radio" name="consulta" value="C">Críticas <br> <br>
+            <input type="checkbox" name="condi" value="ok">
+            Marque esta casilla para verificar que ha leído nuestros términos
+            y condiciones del servicio. <br> <br>
+            Observaciones:<br>  <textarea name="obs"></textarea> <br> <br>
+        </fieldset>
+        <br>
+        <button type= 'submit'>Enviar</button>
+    </form>
+</body>
+</html>
